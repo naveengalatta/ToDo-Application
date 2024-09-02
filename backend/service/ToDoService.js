@@ -57,8 +57,8 @@ exports.ToDoService = {
     deleteByIdToDoService: function (req, res) {
         return new Promise(async (resolve, reject) => {
             try {
-                if (!req.body.id) throw { message: "Mandatory field id" };
-                var todo = await ToDo.findByPk(req.body.id);
+                if (!req.params.id) throw { message: "Mandatory field id" };
+                var todo = await ToDo.findByPk(req.params.id);
                 if (!todo) throw { message: "Data not found" };
                 resolve(await todo.destroy());
             } catch (error) {

@@ -1,11 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const sequelize = require("./util/Database.js");
 const { ToDoController } = require("./controller/ToDoController.js");
 
 const app = express();
 app.use(bodyParser.json({ limit: "10mb" }));
+app.use(cors());
 
 global.returnResponse = (req, res, promise) => {
     res.type("application/json");
@@ -16,14 +18,14 @@ global.returnResponse = (req, res, promise) => {
         })
         .catch((err) => {
             res.status(500);
-            res.json(err.message || err);
+            res.json({ message: err.message || err });
         });
 };
 
 app.use("/todo", ToDoController.init(express.Router()));
 
 sequelize
-    .sync({ force: true })
+    .sync({force : true})
     .then((result) => {
         console.log("DB connection established... ");
         var port = process.env.PORT || 8080;
