@@ -9,7 +9,7 @@ export default function Todo() {
   const [editId, setEditId] = useState(-1);
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
-  const apiUrl = "http://localhost:8080";
+  const apiUrl = process.env.API_URL;
 
   const handleSubmit = async () => {
     setError("");
