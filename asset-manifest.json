@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ToDo-Application/static/css/main.f855e6bc.css",
-    "main.js": "/ToDo-Application/static/js/main.5a5cefd6.js",
-    "static/js/453.8ab44547.chunk.js": "/ToDo-Application/static/js/453.8ab44547.chunk.js",
-    "index.html": "/ToDo-Application/index.html",
-    "main.f855e6bc.css.map": "/ToDo-Application/static/css/main.f855e6bc.css.map",
-    "main.5a5cefd6.js.map": "/ToDo-Application/static/js/main.5a5cefd6.js.map",
-    "453.8ab44547.chunk.js.map": "/ToDo-Application/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/ToDo-Application/frontend/app/static/css/main.f855e6bc.css",
+    "main.js": "/ToDo-Application/frontend/app/static/js/main.f9d66b98.js",
+    "static/js/453.8ab44547.chunk.js": "/ToDo-Application/frontend/app/static/js/453.8ab44547.chunk.js",
+    "index.html": "/ToDo-Application/frontend/app/index.html",
+    "main.f855e6bc.css.map": "/ToDo-Application/frontend/app/static/css/main.f855e6bc.css.map",
+    "main.f9d66b98.js.map": "/ToDo-Application/frontend/app/static/js/main.f9d66b98.js.map",
+    "453.8ab44547.chunk.js.map": "/ToDo-Application/frontend/app/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.5a5cefd6.js"
+    "static/js/main.f9d66b98.js"
   ]
 }
